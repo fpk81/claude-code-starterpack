@@ -1,4 +1,4 @@
-# CLAAS StarterPack v4.0
+# Claude Code StarterPack v4.0
 
 Mission: Dramatically raise the quality floor for any user — from layperson to senior dev — through structured AI-assisted workflow. This does not guarantee elite-team output for every edge case, but it catches 90%+ of common mistakes and enforces professional discipline.
 
