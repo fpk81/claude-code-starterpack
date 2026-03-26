@@ -155,10 +155,12 @@ Tests validate that hooks correctly block dangerous operations and allow safe on
 
 ## Background
 
-This StarterPack came out of a research project (CLAAS — Claude as Active System) that studied how to make Claude Code effective for people who aren't senior engineers. The goal was to make the quality of output independent of the user's experience level — same guardrails, same process, same rigor whether you're a founder building your first app or a team lead on your fifteenth.
-
-The research involved 23 phases of iterative development, evaluation by simulated expert panels (security engineers, senior developers, project managers, DevOps engineers), and real-world testing on production projects. The v4 architecture you see here is the result.
+This was developed for real business use. The configuration went through multiple rounds of iteration and testing on actual projects before being published. The goal was to make Claude Code produce consistent, professional-grade output regardless of the user's technical background.
 
 ## License
 
-MIT
+Free to use, including commercially. Attribution required.
+
+Created by Florian Kuschnigg, KS Management FlexCo.
+
+If you use this in your own projects or build on it, include a reference to the original author and this repository.
