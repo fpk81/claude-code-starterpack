@@ -66,6 +66,14 @@ CLAUDE.md                              Entry point — behavioral rules, workflo
     methodology-iterative.md           Sprint-based workflow
     methodology-kanban.md              Continuous flow workflow
     cowork-setup.md                    Multi-instance setup and coordination
+research/
+  00-meta-review-professor-thornton.md Cross-report synthesis and findings
+  01-anthropic-official-sources.md     Anthropic documentation analysis
+  02-context-optimization.md           Context window and token management
+  03-project-management.md             Workflow and task structuring
+  04-safety-guardrails.md              Security enforcement patterns
+  05-expert-community-insights.md      Production user patterns
+  06-configuration-architecture.md     Agent/hook/rule architecture
 tests/
   test-hooks.sh                        Validates hook behavior (block/allow)
 ```
@@ -152,6 +160,20 @@ bash tests/test-hooks.sh
 ```
 
 Tests validate that hooks correctly block dangerous operations and allow safe ones.
+
+## Research
+
+The `research/` folder contains the studies that informed the design of this StarterPack. Each report covers a specific domain, cites its sources, and explains how the findings shaped the configuration.
+
+| Report | Covers |
+|--------|--------|
+| 00 — Meta-Review | Synthesis across all reports, cross-referenced findings |
+| 01 — Anthropic Official Sources | What Anthropic's own documentation recommends |
+| 02 — Context Optimization | Managing context windows, token budgets, session continuity |
+| 03 — Project Management | Structuring work, task tracking, multi-step workflows |
+| 04 — Safety and Guardrails | Security enforcement, destructive command prevention, access control |
+| 05 — Expert Community Insights | Patterns from production users and open-source projects |
+| 06 — Configuration Architecture | How to structure agents, hooks, rules, and skills |
 
 ## Background
 
