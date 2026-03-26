@@ -1,0 +1,82 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "command": ".claude/hooks/session-start.sh",
+        "timeout": 5000
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "command": ".claude/hooks/block-dangerous-git.sh",
+        "timeout": 10000
+      },
+      {
+        "matcher": "Edit|Write",
+        "command": ".claude/hooks/scope-lock.sh",
+        "timeout": 5000
+      },
+      {
+        "matcher": "Edit|Write",
+        "command": ".claude/hooks/protect-config.sh",
+        "timeout": 5000
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Bash",
+        "command": ".claude/hooks/traceability-log.sh",
+        "timeout": 10000
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "command": ".claude/hooks/validate-config.sh",
+        "timeout": 3000
+      }
+    ],
+    "Stop": [
+      {
+        "command": ".claude/hooks/session-checkpoint.sh",
+        "timeout": 5000
+      }
+    ]
+  },
+  "permissions": {
+    "deny": [
+      {
+        "tool": "Read",
+        "path": "**/.env*"
+      },
+      {
+        "tool": "Read",
+        "path": "**/*credentials*"
+      },
+      {
+        "tool": "Read",
+        "path": "**/*secret*"
+      },
+      {
+        "tool": "Read",
+        "path": "**/.ssh/**"
+      },
+      {
+        "tool": "Edit",
+        "path": ".claude/settings.json"
+      },
+      {
+        "tool": "Write",
+        "path": ".claude/settings.json"
+      },
+      {
+        "tool": "Edit",
+        "path": ".claude/hooks/**"
+      },
+      {
+        "tool": "Write",
+        "path": ".claude/hooks/**"
+      }
+    ]
+  }
+}
