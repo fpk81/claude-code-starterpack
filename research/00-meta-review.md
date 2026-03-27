@@ -1,8 +1,6 @@
 # Meta-Review: Claude Code Best Practices Research Synthesis
 
-## Reviewer
-- **Name**: Prof. Marcus Thornton, Ph.D.
-- **Affiliation**: Harvard University, Dept. of Computer Science & Engineering
+## Review
 - **Date**: 2026-03-25
 - **Reports Reviewed**: 6
 - **Total Findings Analyzed**: 63
